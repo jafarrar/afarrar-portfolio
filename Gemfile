@@ -9,6 +9,9 @@ gem 'pg'
 # Use Gumby
 gem 'gumby-rails'
 
+# Use haml
+gem 'haml'
+
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.2'
 

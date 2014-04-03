@@ -1,3 +1,60 @@
 // Place all the styles related to the site controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+//
+// Chrome font rendering fix
+// ref: http://stackoverflow.com/questions/11487427/is-there-any-font-smoothing-in-google-chrome/19582105#19582105
+@font-face {
+  font-family: 'Roboto';
+  src: asset-url('roboto-regular-webfont.eot');
+  src: asset-url('roboto-regular-webfont.eot?#iefix') format('eot'),
+  asset-url('roboto-regular-webfont.woff') format('woff'),
+  asset-url('roboto-regular-webfont.ttf') format('truetype'),
+  asset-url('roboto-regular-webfont.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  src: asset-url('opensans-regular-webfont.eot');
+  src: asset-url('opensans-regular-webfont.eot?#iefix') format('eot'),
+  asset-url('opensans-regular-webfont.woff') format('woff'),
+  asset-url('opensans-regular-webfont.ttf') format('truetype'),
+  asset-url('opensans-regular-webfont.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+	@font-face {
+		font-family: 'Open Sans';
+		src: asset-url('opensans-regular-webfont.svg') format('svg');
+	  }
+	@font-face {
+		font-family: 'Roboto';
+		src: asset-url('roboto-regular-webfont.svg') format('svg');
+	  }
+}
+
+//
+// global
+//
+body, html {
+	background: url('background.jpg');
+	position: fixed;
+}
+h1, h2, h3 {
+	font-family: 'Roboto'
+}
+p, li, a, strong {
+	font-family: 'Open Sans';
+}
+
+//
+// header
+//
+.headline {
+	text-align: center;
+}

@@ -1,4 +1,5 @@
 Portfolio::Application.routes.draw do
+  root "site#index"
   get "site/new"
   get "site/create"
   # The priority is based upon order of creation: first created -> highest priority.
