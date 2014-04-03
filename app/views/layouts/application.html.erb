@@ -1,10 +1,30 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Portfolio</title>
-  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
-  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
-  <%= csrf_meta_tags %>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<title>Front-end Web Developer | Boston, MA | Andrew Farrar</title>
+	<meta name="description" content="The portfolio of front-end web developer, Andrew Farrar." />
+	<meta name="keywords" content="web design, front-end web developer, boston" />
+	<meta name="author" content="humans.txt">
+	<link rel="shortcut icon" href="favicon.png" type="image/x-icon" />
+
+	<!-- Facebook Metadata /-->
+	<meta property="fb:page_id" content="" />
+	<meta property="og:image" content="" />
+	<meta property="og:description" content=""/>
+	<meta property="og:title" content=""/>
+
+	<!-- Google+ Metadata /-->
+	<meta itemprop="name" content="">
+	<meta itemprop="description" content="">
+	<meta itemprop="image" content="">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+	<%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+	<%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+	<%= javascript_include_tag :modernizr %>
+	<%= csrf_meta_tags %>
+	<script>smoothScroll.init();</script>
 </head>
 <body>
 

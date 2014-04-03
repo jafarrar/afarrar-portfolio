@@ -1,5 +1,55 @@
-.row.headline
-	.sixteen.columns
-		%h1 Andrew Farrar
-		%h2 Front-end Web Developer
-		%h3 Boston, MA
+:plain
+	<!--[if gte IE 9]><style type="text/css"> .gradient {filter: none;}</style><![endif]-->
+
+%section.nav
+	.row
+		.sixteen.columns
+			.container
+				%ul
+					%li 
+						%a{"data-scroll" => "", href: "#what"} What I Do
+					%li 
+						%a{"data-scroll" => "", href: "#mywork"} My Work
+					%li 
+						%a{"data-scroll" => "", href: "#contact"} Contact Me
+
+%section.headline
+	.row
+		.sixteen.columns
+			.container
+				%h1 Andrew Farrar
+				%h2 Front-end Web Developer
+				%h3 Boston, MA
+				.cta.large.btn
+					%a{"data-scroll" => "", href: "#contact"} Get In Touch
+
+%section.content
+	.row
+		.sixteen.columns
+			.container
+				%h3 Catchy line
+				%p
+					Lorem ipsum dolor sit amet, eam feugiat deserunt accusata an. Eos dico patrioque in, eu lobortis principes per. Ea reque meliore est. Vix ad errem delenit, te commodo partiendo ius. Malis inani phaedrum ad ius, has ei veri quando legere. At eius tantas pri.
+				%p
+					Ei mazim graeco dissentiunt duo, fierent invenire ei nec. Ei duis magna meliore nam, pro in quot probo sanctus. Magna fugit definiebas ut qui, ne summo tempor nonumes qui. Te modus zril tantas pri. An bonorum delectus per, veritus copiosae no nec.
+
+	.row
+		.sixteen.columns
+			.container#mywork
+				%h3 My awesome sites*
+				%p (*may not be awesome)
+				.four.columns
+					%p test
+				.four.columns
+					%p test
+				.four.columns
+					%p test
+				.four.columns
+					%p test
+				.clearfix;
+
+	.row
+		.sixteen.columns
+			.container#contact
+				%h3 Get in touch
+				%p info here

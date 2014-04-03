@@ -6,11 +6,17 @@ gem 'rails', '4.0.4'
 # Use postgresql as the database for Active Record
 gem 'pg'
 
+#Use Modernizrjs
+gem 'modernizr-rails'
+
 # Use Gumby
 gem 'gumby-rails'
 
 # Use haml
 gem 'haml'
+
+# Use Compass
+gem 'compass-rails'
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.2'
@@ -49,3 +55,5 @@ end
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]
+
+

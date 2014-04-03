@@ -7,8 +7,11 @@
  *
  * You're free to add application-wide styles to this file and they'll appear at the top of the
  * compiled file, but it's generally better to create a new file per style scope.
- *= require gumby16
  *
  *= require_self
+ *= require gumby/ui
+ *= require gumby/style
+ *= require gumby/text
+ *= require gumby/16col
  *= require_tree .
  */
