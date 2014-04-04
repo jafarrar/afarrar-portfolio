@@ -39,6 +39,9 @@
 	  }
 }
 
+$blue: #0071b6;
+$orange: #b64500;
+
 //
 // global
 //
@@ -55,7 +58,8 @@ body {
 body:before {
 	@include filter-gradient(#a60071, #59b645, vertical);
 	$experimental-support-for-svg: true;
-	@include background-image(linear-gradient(top,  rgba(0,113,182,0.65) 0%,rgba(182,69,0,0.35) 100%));
+	@include background-image(linear-gradient(top,  rgba(0,113,182,0.65) 0%,
+		rgba(182,69,0,0.35) 100%));
 	background-attachment: fixed;
 	background-size: cover;
 	content: " ";
@@ -85,18 +89,40 @@ a, div, li, img {
 //
 .nav {
 	background: rgba(#000, 0.5);
-	ul li {
-		color: #fff;
-		display: inline-block;
-		text-align: -webkit-match-parent;
-		a {
-			padding: 15px;
-			text-transform: uppercase;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 9;
+	ul {
+		margin-bottom: 0;
+		li {
+			color: #fff;
+			display: inline-block;
+			text-align: -webkit-match-parent;
+			margin-bottom: 2px;
+			a {
+				font-size: 1.2em;
+				padding: 15px;
+				//text-transform: uppercase;
+				vertical-align: super;
+				&:hover {
+					background: $orange;
+					color: #fff;
+				}
+			}
+		}	
+		.title {
+			font-family: 'Pt Sans', sans-serif;
+			font-size: 2.3em;
+			span {
+				color: $orange;
+			}
 		}
 	}
 }
 .headline {
-	margin: 40px auto 80px auto;
+	padding: 80px 0 120px 0;
 	text-align: center;
 }
 
