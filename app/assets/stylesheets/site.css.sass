@@ -5,7 +5,7 @@
 // header
 //
 .nav 
-	background: rgba(#000, 0.4)
+	@include content-gradient
 	position: fixed
 	top: 0
 	left: 0
@@ -34,8 +34,9 @@
 		font-size: 2.3em
 		display: inline-block
 		color: #fff
-		span 
-			color: $red
+		img 
+			height: 40px
+			margin-top: 10px
 
 .hero 
 	padding: 100px 0 40px 0
@@ -46,10 +47,16 @@
 		width: 100%
 	h1
 		font-size: 4rem
+		margin-bottom: 20px
+		line-height: 4rem
+	h2
+		font-size: 3rem
+		line-height: 3rem
+		margin-bottom: 40px
 	span
 		color: $red
 	.cta a
-		background: rgba(#000, 0.3)
+		background: rgba(#000, 0.5)
 		border: 5px solid #fff
 		border-radius: 50px
 		font-size: 2em
@@ -70,12 +77,12 @@
 	h3  
 		color: #fff
 	
-	.container 
+	.row
+		@include content-gradient 
 		background: rgba(#000, 0.7)
 		padding: 15px
-	
+
 #mywork 
-	background: rgba(#000, 0.5)
 	.five.columns
 		margin-left: 3%
 	a > p
@@ -85,6 +92,24 @@
 		margin: 10px auto
 		width: 90%
 
+#contact
+	text-align: center
+	.caption
+		text-align: center
+	img
+		-webkit-border-radius: 100%
+		-moz-border-radius: 100%
+		border-radius: 100%
+		width: 20%
+
+.footer
+	@include content-gradient
+	margin-top: 20px
+	text-align: center
+	width: 100%
+	p
+		margin: 0 0
+	
 //
 // media queries
 //
@@ -93,12 +118,11 @@
 		display: none
 	.nav
 		position: relative
-		ul 
-			li a
-				font-size: 1em
-				line-height: 3.6em
-				padding: 15px 0
-				width: 20%
+		ul li a
+			font-size: 1em
+			line-height: 3.6em
+			padding: 15px 0
+			width: 20%
 	.hero
 		padding: 40px 0
 		.container
