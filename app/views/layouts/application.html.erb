@@ -23,8 +23,12 @@
 	<%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
 	<%= javascript_include_tag "application", "data-turbolinks-track" => true %>
 	<%= javascript_include_tag :modernizr %>
-	<%= csrf_meta_tags %>
-	<script>smoothScroll.init();</script>
+	<%= javascript_include_tag :"smooth-scroll" %>
+	<script>
+		$(document).ready(function(){
+			smoothScroll.init();
+		});
+	</script>
 </head>
 <body>
 
