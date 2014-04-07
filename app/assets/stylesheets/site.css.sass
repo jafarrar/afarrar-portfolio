@@ -1,0 +1,63 @@
+// Place all the styles related to the site controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+@import compass
+@import global.css.sass
+
+//
+// header
+//
+.nav 
+	background: rgba(#000, 0.5)
+	position: fixed
+	top: 0
+	left: 0
+	width: 100%
+	z-index: 9
+	ul 
+		margin-bottom: 0
+		li 
+			color: #fff
+			display: inline-block
+			text-align: -webkit-match-parent
+			margin-bottom: 2px
+			a 
+				font-size: 1.2em
+				padding: 15px
+				//text-transform: uppercase
+				vertical-align: super
+				&:hover 
+					background: $orange
+					color: #fff
+		.title 
+			font-family: 'Pt Sans', sans-serif
+			font-size: 2.3em
+			span 
+				color: $orange
+
+.headline 
+	padding: 80px 0 120px 0
+	text-align: center
+
+
+//
+// content
+//
+
+.content 
+	h3  
+		color: #fff
+	
+	.container 
+		background: rgba(#000, 0.7)
+		padding: 15px
+	
+	#mywork 
+		background: rgba(#f1f1f1, 0.3)
+		h3, p, li  
+			color: #000
+		.four.columns  
+			margin-left: auto
+			text-align: center
+		
+	
