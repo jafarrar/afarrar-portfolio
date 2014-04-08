@@ -10,7 +10,7 @@ load "config/recipes/check"
 #load "config/recipes/logrotate"
 #load "config/recipes/logs"
 #load "config/recipes/passenger"
-load "config/recipes/postgresql"
+#load "config/recipes/postgresql"
 #load "config/recipes/pry"
 #load "config/recipes/nginx"
 #load "config/recipes/nodejs"
@@ -36,10 +36,10 @@ server "8.8.8.8", :web, :app, :db, primary: true
 # cap deploy
 #
 set :stages, %w[staging workers production]
-set :default_stage, 'staging'
+set :default_stage, 'production'
 require "capistrano/ext/multistage"
 # Application name - to conventionalize directory/project naming
-set :application, "portfolio"
+set :application, "my_application"
 # Same as above
 set :user, "app"
 # Your application's root directory

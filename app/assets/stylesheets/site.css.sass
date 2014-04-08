@@ -1,16 +1,13 @@
 @import compass
 @import global.css.sass
+@import animate.css
 
 //
 // header
 //
-.nav 
+.nav
 	@include content-gradient
-	position: fixed
-	top: 0
-	left: 0
 	width: 100%
-	z-index: 9
 	ul 
 		float: right
 		margin-bottom: 0
@@ -21,6 +18,7 @@
 			display: inline-block
 			text-align: -webkit-match-parent
 			margin-bottom: 2px
+			margin-top: 5px
 			a 
 				font-size: 1.2em
 				line-height: 3em
@@ -37,6 +35,40 @@
 		img 
 			height: 40px
 			margin-top: 10px
+
+//header animations
+.headroom 
+	position: fixed
+	z-index: 9998
+	top: 0
+	left: 0
+	right: 0
+	-webkit-transition: .25s
+	-o-transition: .25s
+	-moz-transition: .25s
+	-ms-transition: .25s
+	transition: transform .25s ease-in-out
+
+.headroom--unpinned 
+	top: -108px
+	-webkit-transition: .25s
+	-o-transition: .25s
+	-moz-transition: .25s
+	-ms-transition: .25s
+	transition: .25s
+	-webkit-transform: translateY(-108px)
+	-o-transform: translateY(-108px)
+	-moz-transform: translateY(-108px)
+	-ms-transform: translateY(-108px)
+	transform: translateY(-108px)
+
+.headroom--pinned 
+	top: 0
+	-webkit-transition: .5s
+	-o-transition: .5s
+	-moz-transition: .5s
+	-ms-transition: .5s
+	transition: .5s
 
 .hero 
 	padding: 100px 0 40px 0

@@ -24,10 +24,15 @@
 	<%= javascript_include_tag "application", "data-turbolinks-track" => true %>
 	<%= javascript_include_tag :modernizr %>
 	<%= javascript_include_tag :"smooth-scroll" %>
+	<%= javascript_include_tag :"headroom" %>
 	<script>
 		$(document).ready(function(){
 			smoothScroll.init();
+			var myElement = document.querySelector(".nav");
+			var headroom  = new Headroom(myElement);
+			headroom.init(); 
 		});
+		
 	</script>
 </head>
 <body>
