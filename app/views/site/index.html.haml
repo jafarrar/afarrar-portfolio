@@ -1,27 +1,14 @@
 :plain
 	<!--[if gte IE 9]><style type="text/css"> .gradient {filter: none;}</style><![endif]-->
 
-%section.nav
-	.row
-		.sixteen.columns
-			.container
-				.title
-					%img{src: asset_path("logo.png")}
-				%ul
-					%li 
-						%a{"data-scroll" => "", href: "#what"} What I Do
-					%li 
-						%a{"data-scroll" => "", href: "#mywork"} My Work
-					%li 
-						%a{"data-scroll" => "", href: "#contact"} Contact Me
-
 %section.hero
 	.row
 		.sixteen.columns
 			.container
 				.hero-wrapper
+					%img{src: asset_path("logo.png")}
 					%h1 Web Designer & Front-end Developer in Boston
-					%h2 Specializing in mobile-first responsive design
+					%h2 Specializing in responsive design
 					.cta
 						%a{"data-scroll" => "", href: "#contact"} Get In Touch
 
@@ -74,8 +61,6 @@
 					%p Contact Andrew Farrar
 					%a{href: "mailto:contact@andrew-farrar.com"}
 						%p contact@andrew-farrar.com
-					%a{href: "tel:4233094719"}
-						%p (423) 309-4719
 				.clearfix
 
 %section.footer
