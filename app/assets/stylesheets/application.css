@@ -13,5 +13,7 @@
  *= require gumby/style
  *= require gumby/text
  *= require gumby/16col
+ *= require site
+ *= require global
  *= require_tree .
  */

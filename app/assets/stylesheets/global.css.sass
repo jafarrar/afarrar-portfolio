@@ -5,16 +5,16 @@
 // ref: http://stackoverflow.com/questions/11487427/is-there-any-font-smoothing-in-google-chrome/19582105#19582105
 @font-face
 	font-family: 'Roboto'
-	src: asset_path('roboto-regular-webfont.eot')
-	src: asset_path('roboto-regular-webfont.eot?#iefix') format("eot"), asset_path('roboto-regular-webfont.woff') format("woff"), asset_path('roboto-regular-webfont.ttf') format("truetype"), asset_path('roboto-regular-webfont.svg') format("svg")
+	src: asset-url('roboto-regular-webfont.eot')
+	src: asset-url('roboto-regular-webfont.eot?#iefix') format("eot"), asset-url('roboto-regular-webfont.woff') format("woff"), asset-url('roboto-regular-webfont.ttf') format("truetype"), asset-url('roboto-regular-webfont.svg') format("svg")
 	font-weight: normal
 	font-style: normal
 
 
 @font-face
 	font-family: 'PT Sans'
-	src: asset_path('pt_sans-web-bold-webfont.eot')
-	src: asset_path('pt_sans-web-bold-webfont.eot?#iefix') format("eot"), asset_path('pt_sans-web-bold-webfont.woff') format("woff"), asset_path('pt_sans-web-bold-webfont.ttf') format("truetype"), asset_path('pt_sans-web-bold-webfont.svg') format("svg")
+	src: asset-url('pt_sans-web-bold-webfont.eot')
+	src: asset-url('pt_sans-web-bold-webfont.eot?#iefix') format("eot"), asset-url('pt_sans-web-bold-webfont.woff') format("woff"), asset-url('pt_sans-web-bold-webfont.ttf') format("truetype"), asset-url('pt_sans-web-bold-webfont.svg') format("svg")
 	font-weight: normal
 	font-style: normal
 
@@ -22,11 +22,11 @@
 @media screen and (-webkit-min-device-pixel-ratio: 0)
 	@font-face
 		font-family: 'Roboto'
-		src: asset_path('roboto-regular-webfont.svg') format("svg")
+		src: asset-url('roboto-regular-webfont.svg') format("svg")
 
 	@font-face
 		font-family: 'PT Sans'
-		src: asset_path('pt_sans-web-bold-webfont.svg') format("svg")
+		src: asset-url('pt_sans-web-bold-webfont.svg') format("svg")
 
 @mixin content-gradient
 	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzAwMDAwMCIgc3RvcC1vcGFjaXR5PSIwLjciLz4KICAgIDxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzJiMjcyNyIgc3RvcC1vcGFjaXR5PSIwLjciLz4KICA8L2xpbmVhckdyYWRpZW50PgogIDxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxIiBoZWlnaHQ9IjEiIGZpbGw9InVybCgjZ3JhZC11Y2dnLWdlbmVyYXRlZCkiIC8+Cjwvc3ZnPg==)
@@ -53,7 +53,7 @@ html
 	height: 100%
 
 body 
-	background: url(asset_path('background.jpg')) top center no-repeat
+	background: asset-url('background.jpg') top center no-repeat
 	background-attachment: fixed
 	background-size: cover
 	margin: 0
