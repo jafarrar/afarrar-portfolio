@@ -2,27 +2,19 @@
 @import global.css.sass
 @import animate.css
 
+//
+// hero
+//
 .hero 
 	padding: 50px 0 50px 0
 	text-align: center
+
 	.container 
 		display: table
 		height: 400px
 		width: 100%
-	img
-		width: 15%
-		margin: 5px auto
-	h1
-		font-size: 4rem
-		margin-bottom: 20px
-		line-height: 4rem
-	h2
-		font-size: 3rem
-		line-height: 3rem
-		margin-bottom: 40px
-	span
-		color: $red
 	.cta a
+
 		background: rgba(#000, 0.5)
 		border: 5px solid #fff
 		border-radius: 50px
@@ -33,9 +25,29 @@
 			background: rgba($green, 0.5)
 			border: 5px solid #f1f1f1
 			color: #fff
+
+	h1
+		font-size: 4rem
+		margin-bottom: 20px
+		line-height: 4rem
+
+	h2
+		font-size: 3rem
+		line-height: 3rem
+		margin-bottom: 40px
+
 	.hero-wrapper
 		display: table-cell
 		vertical-align: middle
+
+	img
+		width: 15%
+		margin: 5px auto
+
+	span
+		color: $red
+
+
 
 //
 // content
@@ -52,8 +64,10 @@
 #mywork 
 	.five.columns
 		margin-left: 3%
+
 	a > p
 		text-align: center
+
 	img
 		display: block
 		margin: 10px auto
@@ -61,8 +75,10 @@
 
 #contact
 	text-align: center
+
 	.caption
 		text-align: center
+
 	img
 		-webkit-border-radius: 100%
 		-moz-border-radius: 100%
@@ -74,6 +90,7 @@
 	margin-top: 20px
 	text-align: center
 	width: 100%
+
 	p
 		margin: 0 0
 	
@@ -83,13 +100,16 @@
 @media only screen and (max-width: 767px)
 	body:before 
 		display: none
+
 	.nav
 		position: relative
+
 		ul li a
 			font-size: 1em
 			line-height: 3.6em
 			padding: 15px 0
 			width: 20%
+	
 	.hero
 		padding: 40px 0
 		.container
