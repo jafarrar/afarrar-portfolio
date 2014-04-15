@@ -19,58 +19,149 @@
 				%h3 Andrew Farrar
 
 				%p
-					I'm a Boston-based web developer that's originally from Chattanooga, TN. I moved to the area in 2012 in search of new opportunities.
+					I'm a Boston-based web developer who's originally from Chattanooga, TN. I moved to the area in 2012 in search of new opportunities.
 
 				%p
-					I'm a recovering template-driven web designer looking to move into true front-end development.
+					My day job involves template-driven Responsive web design for small businessess. I'm looking to move into true front-end development. 
+				%p
+					Outside of my day job, I work with
+					%a{href: "http://wellplayed.org", target: "_blank"} WellPlayed Productions
+					to broadcast innvoative video game tournament ("esports") content.
 
 	.row
 		.sixteen.columns#mywork
 			.container
 				%h3 My Work
-
+				
 				.five.columns
-					%a{href: "http://www.chez-del.com/", target: "_blank"}
+					#modal1.modal
+						.modalcontent
+							%a.close.switch{"gumby-trigger" => "#modal1"}
+								%i.icon-cancel
+							.row
+								.ten.columns.centered.text-center
+									%h2 Chez-Del
+									%img{src: asset_path("chezdel.jpg")}
+									%a{href: "http://chez-del.com", target: "_blank"}
+										%p Chez-Del Home Furnishings & Interior Design
+									%p.btn.primary.medium
+										%a.switch{"gumby-trigger" => "|#modal1", href: "#"} Close
+					%a.switch{"gumby-trigger" => "#modal1", href: "#"}
 						%img{src: asset_path("chezdel.jpg")}
-						%p Chez-Del Home Furnishings & Interior Design
+						%a{href: "http://chez-del.com", target: "_blank"}
+							%p Chez-Del Home Furnishings & Interior Design
 
 				.five.columns
-					%a{href: "http://www.lonestarclash.com/", target: "_blank"}
+					#modal2.modal
+						.modalcontent
+							%a.close.switch{"gumby-trigger" => "#modal2"}
+								%i.icon-cancel
+							.row
+								.ten.columns.centered.text-center
+									%h2 Lone Star Clash 3
+									%img{src: asset_path("lonestarclash.jpg")}
+									%a{href: "http://lonestarclash.com", target: "_blank"}
+										%p Lone Star Clash
+									%p.btn.primary.medium
+										%a.switch{"gumby-trigger" => "|#modal2", href: "#"} Close
+					%a.switch{"gumby-trigger" => "#modal2", href: "#"}
 						%img{src: asset_path("lonestarclash.jpg")}
-						%p Lone Star Clash
+						%a{href: "http://lonestarclash.com", target: "_blank"}
+							%p Lone Star Clash
+						
 
 				.five.columns
-					%a{href: "http://www.dancestudioofbraintree.com/", target: "_blank"}
+					#modal3.modal
+						.modalcontent
+							%a.close.switch{"gumby-trigger" => "#modal3"}
+								%i.icon-cancel
+							.row
+								.ten.columns.centered.text-center
+									%h2 test
+									%img{src: asset_path("dancestudio.jpg")}
+									%a{href: "http://www.dancestudioofbraintree.com/", target: "_blank"}
+										%p Dance Studio of Braintree
+									%p.btn.primary.medium
+										%a.switch{"gumby-trigger" => "|#modal3", href: "#"} Close
+					%a.switch{"gumby-trigger" => "#modal3", href: "#"}
 						%img{src: asset_path("dancestudio.jpg")}
-						%p Dance Studio of Braintree
+						%a{href: "http://www.dancestudioofbraintree.com/", target: "_blank"}
+							%p Dance Studio of Braintree
 
 				.clearfix
 
 			.container
 				.five.columns
-					%a{href: "http://www.elampi.com/", target: "_blank"}
+					#modal4.modal
+						.modalcontent
+							%a.close.switch{"gumby-trigger" => "#modal4"}
+								%i.icon-cancel
+							.row
+								.ten.columns.centered.text-center
+									%h2 test
+									%img{src: asset_path("elampi.jpg")}
+									%a{href: "http://www.elampi.com/", target: "_blank"}
+										%p Elam Private Detective
+									%p.btn.primary.medium
+										%a.switch{"gumby-trigger" => "|#modal4", href: "#"} Close
+					%a.switch{"gumby-trigger" => "#modal4", href: "#"}
 						%img{src: asset_path("elampi.jpg")}
-						%p Elam Private Detective
+						%a{href: "http://www.elampi.com/", target: "_blank"}
+							%p Elam Private Detective
 
 				.five.columns
-					%a{href: "http://www.bandaladds.com/", target: "_blank"}
+					#modal5.modal
+						.modalcontent
+							%a.close.switch{"gumby-trigger" => "#modal5"}
+								%i.icon-cancel
+							.row
+								.ten.columns.centered.text-center
+									%h2 test
+									%img{src: asset_path("bandala.jpg")}
+									%a{href: "http://www.bandaladds.com/", target: "_blank"}
+										%p Bandala DDS
+									%p.btn.primary.medium
+										%a.switch{"gumby-trigger" => "|#modal5", href: "#"} Close
+					%a.switch{"gumby-trigger" => "#modal5", href: "#"}
 						%img{src: asset_path("bandala.jpg")}
-						%p Jose L. Bandala D.D.S.
+						%a{href: "http://www.bandaladds.com/", target: "_blank"}
+							%p Bandala DDS
 
 				.five.columns
-					%a{href: "http://www.valpakofboston.com/", target: "_blank"}
+					#modal6.modal
+						.modalcontent
+							%a.close.switch{"gumby-trigger" => "#modal6"}
+								%i.icon-cancel
+							.row
+								.ten.columns.centered.text-center
+									%h2 test
+									%img{src: asset_path("valpak.jpg")}
+									%a{href: "http://www.valpakofboston.com/", target: "_blank"}
+										%p Valpak of Boston
+									%p.btn.primary.medium
+										%a.switch{"gumby-trigger" => "|#modal6", href: "#"} Close
+					%a.switch{"gumby-trigger" => "#modal6", href: "#"}
 						%img{src: asset_path("valpak.jpg")}
-						%p Valpak of Boston
+						%a{href: "http://www.valpakofboston.com/", target: "_blank"}
+							%p Valpak of Boston
 
 				.clearfix
 	.row
 		.sixteen.columns
 			.container
+				#skills
+					%p
+						HTML5, HAML, CSS3, SASS, Ruby on Rails, Javascript
 				#contact
-					%img{src: asset_path("headshot.jpg")}
+					%img#headshot{src: asset_path("headshot.jpg")}
 					%p Contact Andrew Farrar
+					%a{href: "https://www.linkedin.com/in/andrewfarrar"}
+						%img{src: asset_path("linkedin.png")}
+					%a{href: "https://github.com/kegwen"}
+						%img{src: asset_path("github.png")}
 					%a{href: "mailto:contact@andrew-farrar.com"}
 						%p contact@andrew-farrar.com
+
 				.clearfix
 
 %section.footer
@@ -78,3 +169,5 @@
 		.centered.six.columns
 			.container
 				%p= "Copyright " + Time.now.strftime("%Y")
+
+%section.modalsection

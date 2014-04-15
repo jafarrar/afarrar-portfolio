@@ -9,10 +9,9 @@
  * compiled file, but it's generally better to create a new file per style scope.
  *
  *= require_self
+ *= require gumby
+ *= require gumby16
  *= require gumby/ui
- *= require gumby/style
- *= require gumby/text
- *= require gumby/16col
  *= require site
  *= require global
  *= require_tree .

@@ -45,6 +45,9 @@ GEM
     erubis (2.7.0)
     execjs (2.0.2)
     fssm (0.2.10)
+    gumby-framework (0.0.1)
+      jquery-rails
+      modernizr-rails
     gumby-rails (1.1)
     haml (4.0.5)
       tilt
@@ -127,6 +130,7 @@ PLATFORMS
 DEPENDENCIES
   coffee-rails (~> 4.0.0)
   compass-rails
+  gumby-framework
   gumby-rails
   haml
   jbuilder (~> 1.2)

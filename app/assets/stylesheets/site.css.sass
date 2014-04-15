@@ -57,11 +57,10 @@
 	h3  
 		color: #fff
 	
-	.row
+	.container
 		@include content-gradient 
 		background: rgba(#000, 0.7)
-		.container
-			padding: 15px
+		padding: 15px
 		
 
 #mywork 
@@ -82,7 +81,7 @@
 	.caption
 		text-align: center
 
-	img
+	#headshot
 		-webkit-border-radius: 100%
 		-moz-border-radius: 100%
 		border-radius: 100%
@@ -96,7 +95,21 @@
 
 	p
 		margin: 0 0
-	
+
+.modalcontent
+	width: 85%
+	min-height: 70%
+	max-height: 90%
+	position: relative
+	top: 5%
+	margin: 0 auto
+	padding: 20px
+	background: rgba(#fff, 0.3)
+	z-index: 2
+	overflow: auto
+	img
+		margin: 0 auto
+
 //
 // media queries
 //

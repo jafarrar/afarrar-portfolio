@@ -11,6 +11,7 @@ gem 'modernizr-rails'
 
 # Use Gumby
 gem 'gumby-rails'
+gem 'gumby-framework'
 
 # Use haml
 gem 'haml'
